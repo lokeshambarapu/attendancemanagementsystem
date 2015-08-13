@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.login
+{
+border-style: solid;
+border-width: 5px;
+	text-align:center;
+	background-color:linen;
+	height:300px;
+	width:300px;
+	position: absolute;
+    left: 550px;
+    top: 100px;	
+}
+</style>
+<!--
+<script>
+function validateForm() {
+   var select = document.getElementById('year').value;
+var select1 = document.getElementById('branch').value;
+var select2 = document.getElementById('section').value;
+
+
+    alert(select);
+	alert(select1);
+	alert(select2);
+	
+   }
+</script>
+-->
+
+</head>
+
+<body bgcolor="#E6E6FA">
+
+<form name="table" 
+onsubmit="return validateForm()" method="post" action="table1.html">
+
+<div align="center"class="login">
+
+</br>
+</br>
+</br>
+SELECT YEAR
+
+<select id="year" name="year">
+
+  <option value="1st year">1st year</option>
+  <option value="2nd year">2nd year</option>
+  <option value="3rd year">3rd year</option>
+  <option value="4th year">4th year</option>
+  
+</select>
+
+</br>
+</br>
+
+SELECT BRANCH
+
+<select id="branch" name="branch">
+
+  <option value="CSE">CSE</option>
+  <option value="IT">IT</option>
+  <option value="ECE">ECE</option>
+  <option value="EEE">EEE</option>
+  <option value="MECH">MECH</option>
+  <option value="PROD">PROD</option>
+  <option value="BIOTECH">BIOTECH</option>
+     
+</select>
+
+</br>
+</br>
+
+SELECT SECTION
+
+<select id="section" name="section">
+
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  
+</select>
+
+</br>
+</br>
+<input type="submit">
+
+
+  </div>
+  </form>
+</body>
+
+
+</html>

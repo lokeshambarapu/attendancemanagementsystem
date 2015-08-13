@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Attendance Management System</title>
+<style>
+body {
+    background-color: white;
+	background-color: #cccccc;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body background="cbit.jpg">
+
+<div class="heading">
+
+<div style="float:left">
+<img src="logo.jpg" height="140">
+</div>
+
+<div>
+<h1>CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY (Autonomous) </h1>
+<h4>(An Emerging Engineering College Of Excellence at All India Level)</h4>
+<h4>Accredited By NBA_AICTE , New Delhi</h4>
+</div>
+</div>
+
+<hr>
+
+<div class="contents">
+<ul>
+<li><a href="#">Home</a></li>
+
+
+
+<li><a href="#">Courses</a></li>
+
+<li><a href="#">library</a></li>
+<li><a href="#">Events</a></li>
+<li><a href="#">Download</a></li>
+<li><a href="#">Alumni</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">About</a></li>
+
+
+</ul>
+</div>
+<hr>
+
+<div class="career">
+<h2>Career Guidance</h2>
+<h4>talk with experienced faculty regarding your carrer</h4>
+<h4>Express your doubts and take suggestions</h4>
+<h3><a href="career.html">Click Here</a></h3>
+</div>
+
+<div class="slideshow">
+<script language="javascript">
+
+
+var delay=2000 //set delay in miliseconds
+var curindex=0
+
+var randomimages=new Array()
+
+	randomimages[0]="cse.jpg"
+	randomimages[1]="library.jpg"
+	randomimages[2]="gate.jpg"
+	randomimages[3]="ground.jpg"
+	randomimages[4]="aud.jpg"
+	randomimages[5]="shruthi.jpg"
+    randomimages[6]="lib.jpg"
+var preload=new Array()
+
+for (n=0;n<randomimages.length;n++)
+{
+	preload[n]=new Image()
+	preload[n].src=randomimages[n]
+}
+
+document.write('<img name="defaultimage" src="'+randomimages[Math.floor(Math.random()*(randomimages.length))]+'">')
+
+function rotateimage()
+{
+
+if (curindex==(tempindex=Math.floor(Math.random()*(randomimages.length)))){
+curindex=curindex==0? 1 : curindex-1
+}
+else
+curindex=tempindex
+
+	document.images.defaultimage.src=randomimages[curindex]
+}
+
+setInterval("rotateimage()",delay)
+
+</script>
+
+</div>
+
+
+
+<div class="alogin">
+<h2>Alumni</h2>
+<h4>stay in touch with college and friends..</h4>
+<h4>Share your photos,videos,Experiences and stay connected all the time</h4>
+<h3><a href="alogin.php">Click here to Register</a></h3>
+</div>
+
+<div class="tlogin">
+<h2>Teacher Login</h2>
+<h4>updating the students attendance</h4>
+<h3><a href="teacherlogin.html">Click here to login</a></h3>
+</div>
+
+<div class="slogin">
+<h2>Student Login</h2>
+<h4>to check attendance details</h4>
+<h3><a href="studentlogin.html">Click here to login</a></h3>
+</div>
+
+<div class="plogin">
+<h2>Parents Login</h2>
+<h4>to check ur child details</h4>
+<h3><a href="parentlogin.html">Click here to Register</a></h3>
+</div>
+
+ <div class="footer"><b>&copy; Chaitanya Bharathi Institute of Technology, Hyderabad, India.</b><br />
+Site Developed by Vilas &amp; Lokesh.</br>
+Site best viewed in 1024x768 resolution.
+</div>
+
+
+
+
+</body>
+</html>
